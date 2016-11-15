@@ -28,7 +28,7 @@ frappe.ui.form.on("Running Account Bill", "get_invoices", function(frm) {
 	frm.set_value("sales_invoice_list", []);
 	if(frm.doc.customer) {
 		return frappe.call({
-			method: 'civil_contracting.civil_contracting.doctype.running_account_bill.running_account_bill.get_sales_invoices',
+			method: 'contracting.contracting.doctype.running_account_bill.running_account_bill.get_sales_invoices',
 			args: {
 				"customer": frm.doc.customer,
 				"project": frm.doc.project,

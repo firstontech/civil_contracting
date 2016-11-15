@@ -18,7 +18,7 @@ frappe.ui.form.on("Measurement Book", "get_items", function(frm) {
 	frm.set_value("records", []);
 	if(frm.doc.delivery_note) {
 		return  frappe.call({
-			method: 'civil_contracting.civil_contracting.doctype.measurement_book.measurement_book.get_measure_sheets',
+			method: 'contracting.contracting.doctype.measurement_book.measurement_book.get_measure_sheets',
 			args: {
 				"dn": frm.doc.delivery_note
 			},

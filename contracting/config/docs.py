@@ -1,8 +1,8 @@
 # from __future__ import unicode_literals
 
-source_link = "https://github.com/revant/civil_contracting"
-docs_base_url = "https://revant.github.io/civil_contracting"
-headline = "Frappe App for use in Civil Contracting Business"
+source_link = "https://github.com/firstontech/contracting"
+docs_base_url = "https://firstontech.github.io/contracting"
+headline = "Frappe App for use in Contracting Business"
 sub_heading = "Helps manage wages, workers and measurements"
 long_description = """Contracting businesses bring together men and material on site to create value. Material Entries are handled by ERPNext.  
 
@@ -17,7 +17,7 @@ ERPNext manages Employee master document which requires in-depth information abo
 
 Employee Attendance and Payroll is managed on monthly basis. Where as Workers come and go on daily basis, some remain up to the period of site allowing us to pay them later as our outstanding wages. Taking Worker attendance and making wage payment becomes a as-required affair not a monthly affair. Wages must be recorded as direct costs.  
 
-Civil Contracting manages these challenges by Creating Worker Database, Worker Attendence and Expense Tracking Document and a Document to manage Outstanding Wage payments. These documents are integrated into ERPNext accounts. On submitting these documents appropriate Journal Entries can be made from the information in the Documents. This app also adds Measurement Book and Measurement Sheets to record site measurements.
+Contracting manages these challenges by Creating Worker Database, Worker Attendence and Expense Tracking Document and a Document to manage Outstanding Wage payments. These documents are integrated into ERPNext accounts. On submitting these documents appropriate Journal Entries can be made from the information in the Documents.
 
 """
 

@@ -9,7 +9,7 @@ var working_hours = 0.0;
 frappe.ui.form.on("Worker Sheet", {
 	onload: function(frm) {
 		frappe.call({
-        	method: "civil_contracting.civil_contracting.doctype.worker_sheet_settings.worker_sheet_settings.get_account",
+        	method: "contracting.contracting.doctype.worker_sheet_settings.worker_sheet_settings.get_account",
         	args: {
         		company: frm.doc.company
         	},

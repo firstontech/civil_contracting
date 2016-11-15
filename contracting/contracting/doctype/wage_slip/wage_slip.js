@@ -11,7 +11,7 @@ var os_wages_account = "";
 frappe.ui.form.on("Wage Slip", {
 	onload: function(frm) {
 		frappe.call({
-        	method: "civil_contracting.civil_contracting.doctype.worker_sheet_settings.worker_sheet_settings.get_account",
+        	method: "contracting.contracting.doctype.worker_sheet_settings.worker_sheet_settings.get_account",
         	args: {
         		company: frm.doc.company
         	},
@@ -29,7 +29,7 @@ frappe.ui.form.on("Wage Slip", "get_outstanding_wages", function(frm) {
 
 	frm.set_value("payment_allocation", []);
 	return frappe.call({
-		method: 'civil_contracting.civil_contracting.doctype.wage_slip.wage_slip.get_os_wg',
+		method: 'contracting.contracting.doctype.wage_slip.wage_slip.get_os_wg',
 		args: {
 			"supplier": frm.doc.supplier,
 			"project": frm.doc.project
